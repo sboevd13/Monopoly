@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Monopoly Building</string>
+    <string name="hint_nickname">Введите ваш никнейм</string>
+    <string name="button_connect">Подключиться</string>
+</resources>
