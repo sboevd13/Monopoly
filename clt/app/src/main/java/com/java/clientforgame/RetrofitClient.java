@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
     private static Retrofit retrofit = null;
-    private static final String BASE_URL = "http://ВАШ_IP_АДРЕС:8080"; // Замените на адрес вашего сервера
+    private static final String BASE_URL = "http://10.0.2.2:8080"; // Замените на адрес вашего сервера
 
     public static Retrofit getClient() {
         if (retrofit == null) {

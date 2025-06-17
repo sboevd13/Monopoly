@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name">Dmitriy Sboev</string>
+    <string name="descr">Android Developer Extraordinary</string>
+    <string name="start_screen">Главный экран</string>
+    <string name="load_screen">Загрузка</string>
+    <string name="game_screen">Игра</string>
+    <string name="end_screen">Конец</string>
+    <string name="back_button">Назад</string>
+</resources>

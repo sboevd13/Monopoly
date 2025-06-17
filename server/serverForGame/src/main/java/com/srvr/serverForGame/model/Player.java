@@ -16,12 +16,17 @@ import lombok.Setter;
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
-    @Column(name = "nickname", nullable = false, unique = true)
+    @Column(name = "nickname")  // Кавычки для регистрозависимости
     private String nickname;
 
-    @Column(name = "is_connected")
-    private boolean connected;
+    @Column(name = "is_ready")   // Указываем точное имя из БД
+    private boolean isReady;
 
+    @Column(name = "ad_budget")     // Без кавычек, т.к. в БД lowercase
+    private int adBudget;
+
+    @Column(name = "capital")       // Без кавычек
+    private int capital;
 }
