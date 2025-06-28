@@ -80,8 +80,6 @@ public class GameSessionController {
             if(gameEconomic.getMonth() == 12 && gameEconomic.getYear() == 2028){
                 notifyAllPlayersEnd();
             }else{
-                gameEconomic.setMonth(1);
-                gameEconomic.setYear(2025);
                 notifyAllPlayersReady(); // Отправляем уведомление через WebSocket
             }
             // Сбрасываем флаги готовности (если нужно)
@@ -131,6 +129,7 @@ public class GameSessionController {
         PlayerListDTO dto = new PlayerListDTO();
         dto.setNickname(player.getNickname());
         dto.setCapital(player.getCapital());
+        dto.setId(player.getId());
         return dto;
     }
 

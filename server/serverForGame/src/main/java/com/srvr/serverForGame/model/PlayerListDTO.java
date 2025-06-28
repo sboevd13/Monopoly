@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PlayerListDTO {
-
+    private int id;
     private String nickname;
     private int capital;
 }
